@@ -25,6 +25,11 @@ public interface PromEspecial {
 }
 Vehiculoimplementa esta interfaz, lo que obliga a todas las subclases ( Automovily Motocicleta) a definir cómo se calcula el descuento feriado.
 Esto promueve la abstracción y permite que diferentes tipos de vehículos manejen la misma funcionalidad con su propia lógica interna.
+****
+la interfaz PromEspecial se utiliza para definir un comportamiento común: aplicar un descuento especial.
+No es una clase, sino un contrato que indica que cualquier clase que la implemente debe incluir el método descuentoFeriado().
+En este caso, la clase Automovil implementa la interfaz y define cómo calcular ese descuento, aplicando el porcentaje DTO = 12.3.
+De esta forma, puedo tener distintos tipos de vehículos con comportamientos diferentes, pero todos respetando la misma estructura.
 
 3. Polimorfismo
 El polimorfismo permite que diferentes clases respondan de manera distinta al mismo método.
