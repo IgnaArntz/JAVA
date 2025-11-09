@@ -57,6 +57,12 @@ for (Vehiculo v : listaVehiculos) {
     totalDescuentos += v.descuentoFeriado();
 }
 Cada vehículo ejecuta su propia versión del método, demostrando polimorfismo.
+****
+el polimorfismo se aplica principalmente en la clase Concesionaria, donde se almacena una lista de objetos del tipo Vehiculo.
+Aunque la referencia es del tipo padre, los objetos pueden ser de distintas subclases como Automovil o Motocicleta.
+Al llamar a métodos como ajustePrecio() o aplicarImpuesto(), Java ejecuta la versión correspondiente al tipo real del objeto, sin necesidad de que el programa sepa de qué clase es cada uno.
+Esto permite escribir código más flexible y reutilizable.
+Además, el método descuentoFeriado() de la interfaz PromEspecial también aplica polimorfismo, ya que distintas clases pueden implementarlo de formas diferentes.
 
 4. Colecciones
 Las colecciones permiten almacenar múltiples objetos dinámicamente.
